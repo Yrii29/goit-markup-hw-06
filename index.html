@@ -56,7 +56,7 @@
 
 
                 <h1 class="title">Эффективные решения для вашего бизнеса</h1>
-
+                <!--modal window-->
                 <button class="button-title" data-modal-open>Заказать услугу</button>
 
                 <div class="backdrop is-hidden" data-modal>
@@ -68,11 +68,13 @@
                       </svg>
                     </button>
 
+                    
+
                     <p class="window-title">Оставьте свои данные, мы вам перезвоним</p>
 
                     <form name="signup_form" autocomplete="on" class="window-form">
 
-                      <label for="name">Имя</label>
+                      <label for="name" class="value">Имя</label>
 
                       <div class="window-inputs">  
                         <input type="text" name="name" id="name" class="window-inputs-box">
@@ -82,7 +84,7 @@
 
                       </div>
 
-                      <label for="tel">Телефон</label>
+                      <label for="tel" class="value">Телефон</label>
                       
                       <div class="window-inputs">
                         <input type="tel" name="tel" id="tel" class="window-inputs-box">
@@ -92,7 +94,7 @@
                       
                       </div>
 
-                      <label for="email">Почта</label>
+                      <label for="email" class="value">Почта</label>
                       
                       <div class="window-inputs">
                         <input type="email" name="email" id="email" class="window-inputs-box">
@@ -101,11 +103,22 @@
                         </svg>
                       </div>
 
-                      <label for="comment">Коментарий</label>
-
                       <div class="area">
-                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                        <label for="comment" class="value">Коментарий</label>
+                        <textarea name="comment" id="comment" placeholder="Введите текст" class="area-window"></textarea>
                       </div>
+
+                        
+                          <label for="form-politic" name="politic" class="conditions">
+                            <input type="checkbox">
+                            
+                            <span class="sentence">Соглашаюсь с рассылкой и принимаю<span class="sentence-span">Условия договора</span></span>                            
+                          </label>
+
+                          
+                        
+
+                        <button class="enter-button">Отправить</button>
 
                     </form>
 
@@ -503,6 +516,11 @@
               </li>
               
             </ul>
+          </div>
+
+          <div class="substrides">
+            <h2 class="footer-adres">Подпишитесь на рассылку</h2>
+            <label for="substride-label"></label>
           </div>
         </div>
 
