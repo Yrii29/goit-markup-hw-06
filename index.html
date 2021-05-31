@@ -108,12 +108,15 @@
                         <textarea name="comment" id="comment" placeholder="Введите текст" class="area-window"></textarea>
                       </div>
 
-                        
-                          <label for="form-politic" name="politic" class="conditions">
-                            <input type="checkbox">
+                        <div class="btn-chec">
+                          <label for="form-politic is-hidden" name="politic" class="conditions">
+                            <span class="sentence"> <input type="checkbox" class="boxchek"> Соглашаюсь с рассылкой и принимаю<span class="sentence-span">Условия договора</span></span>
                             
-                            <span class="sentence">Соглашаюсь с рассылкой и принимаю<span class="sentence-span">Условия договора</span></span>                            
+                          
+                            
                           </label>
+                        </div>
+                          
 
                           
                         
@@ -520,7 +523,20 @@
 
           <div class="substrides">
             <h2 class="footer-adres">Подпишитесь на рассылку</h2>
-            <label for="substride-label"></label>
+            <div class="email-box">
+              <input type="email" name="e-mail" id="e-mail" class="input-email" placeholder="E-mail" required="" autocomplete="email">
+              <label for="substride-label">
+                <button class="btn-email">Подписаться
+                  <svg width="24" height="24" class="svg-email">
+                    <use href="./images/icon/icon-icon-send.svg#icon-icon-send"></use>
+                  </svg>
+
+                </button>
+                
+              </label>
+              
+            </div>
+            
           </div>
         </div>
 
