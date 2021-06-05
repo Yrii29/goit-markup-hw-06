@@ -302,10 +302,26 @@ label {
 .window-inputs-box:hover,
 .window-inputs-box:focus {
   border: 1px solid var(--web-color);
+  outline: none;
 }
 
-.window-inputs-box:focus .window-inputs-icon {
-  color: var(--web-color);
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.window-inputs-box:focus + .window-inputs-icon,
+.window-inputs-box:hover + .window-inputs-icon {
+  fill: var(--web-color);
 }
 
 .window-title {
@@ -345,45 +361,35 @@ label {
   margin-bottom: 30px;
 }
 
-.conditions {
-  margin-right: 0;
-  width: 100%;
-  height: 44px;
-  display: inline-flex;
-  justify-content: center;
-  text-align: center;
-  padding-left: 1.2em;
-}
-
-.sentence {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.boxchek {
-  position: absolute;
-  margin-left: -1.2em;
-  width: 1px;
-  height: 1px;
-  background-image: url(images/icon/sprite2.svg/icon-Vector);
-}
-
-.boxchek::before {
-  width: 16px;
-  height: 15px;
-  margin-right: 7px;
+.window-form {
   display: flex;
-  content: ' ';
-  width: 16px;
-  height: 15px;
-  border: 2px solid var(--main-br-color);
-  border-radius: 2px;
+  flex-direction: column;
 }
 
-.sentence {
-  margin-top: 30px;
+.conditions {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.input-chec {
+  width: 16px;
+  height: 16px;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+.boxchek:checked + .input-chec {
+  background-color: blue;
+  background-image: url('../images/Vector.svg');
+  background-size: contain;
+  background-origin: border-box;
+  border-color: blue;
+}
+
+.boxchek:focus + .input-chec {
+  border-color: darkgoldenrod;
+  /*background-image: url(images/icon/sprite2.svg/icon-Vector);*/
 }
 
 .sentence-span {
