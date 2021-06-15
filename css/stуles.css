@@ -367,7 +367,7 @@ label {
   display: flex;
   width: 100%;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .input-chec {
@@ -387,7 +387,15 @@ label {
 }
 
 .boxchek:focus + .input-chec {
-  border-color: var(--main-br-color);
+  color-adjust: var(--main-br-color);
+}
+
+.sentence {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 .sentence-span {
