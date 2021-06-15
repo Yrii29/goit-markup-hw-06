@@ -264,7 +264,7 @@ li {
 }
 
 .icons-close {
-  color: #000;
+  color-adjust: #000;
 }
 
 .icons-close:hover {
